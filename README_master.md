@@ -1,6 +1,5 @@
 # Team_Tableau_Final_Project
 
-## Presentation
 For our group project, we are analyzing a data set from the company for which one of our team members works. The company provides energy optimization and related services for buildings of various types and services. Most of the company's work is project-based. The company bids on work and delivers services according to the scope of the client's requirements.  
 
 The company has a key goal of bidding for projects with a proposal that would win but is also something the company can deliver without going over budget. The company has detailed data related to project type, services performed, duration, billable hours, and status. The question that we plan to answer with the data is whether we can estimate whether a given project is likely to be over of under budget based on the bid and historical patterns.  
