@@ -1,0 +1,91 @@
+Employment Type,Region Type,Primary Team,EmpID
+"Employee","A","EN",1
+"Employee","A","OP",2
+"Employee","B","EN",3
+"Employee","B","EN",4
+"Employee","A","SB",5
+"Employee","B","EN",6
+"Employee","B","OP",8
+"Employee","A","SB",9
+"Employee","B","EN",10
+"Employee","B","EN",11
+"Employee","B","EN",13
+"Employee","B","OP",14
+"Employee","A","SB",17
+"Employee","B","EN",18
+"Employee","B","OP",19
+"Employee","B","EN",20
+"Employee","A","PM",21
+"Employee","A","PM",22
+"Employee","A","PM",23
+"Employee","A","SB",24
+"Employee","A","PM",25
+"Employee","A","SB",26
+"Employee","A","SB",27
+"Employee","A","SB",30
+"Employee","A","PM",31
+"Employee","A","PM",32
+"Employee","A","EN",33
+"Employee","A","OP",35
+"Employee","A","SB",37
+"Employee","A","SB",39
+"Employee","A","SB",40
+"Employee","A","PM",42
+"Employee","A","SB",43
+"Employee","B","SB",44
+"Employee","A","EN",45
+"Employee","A","SB",46
+"Employee","A","San Francisco Team",47
+"Employee","A","OP",49
+"Employee","A","SB",50
+"Employee","A","SB",51
+"Employee","A","SB",53
+"Employee","A","PM",54
+"Employee","A","SB",55
+"Employee","A","SB",58
+"Employee","A","San Francisco Team",59
+"Employee","A","SB",60
+"Employee","A","OP",61
+"Employee","A","San Francisco Team",62
+"Employee","A","OP",63
+"Employee","B","San Francisco Team",64
+"Employee","A","SB",66
+"Employee","A","SB",67
+"Employee","A","OP",69
+"Employee","A","OP",70
+"Employee","A","SB",71
+"Employee","A","EN",72
+"Employee","B","SB",73
+"Employee","A","PM",74
+"Employee","A","SB",75
+"Employee","A","OP",76
+"Employee","A","PM",77
+"Employee","B","SB",78
+"Employee","A","PM",79
+"Employee","A","EN",81
+"Employee","A","SB",82
+"Employee","A","OP",83
+"Employee","A","SB",84
+"Employee","A","EN",86
+"Employee","A","SB",87
+"Employee","A","SB",88
+"Employee","A","SB",89
+"Employee","A","San Francisco Team",90
+"Intern","B","EN",7
+"Intern","A","EN",12
+"Subconsultant","B","EN",15
+"Intern","A","SB",16
+"Intern","A","OP",28
+"Intern","A","OP",29
+"Intern","A","SB",34
+"Subconsultant","A","San Francisco Team",36
+"Intern","B","SB",38
+"Subconsultant","A","San Francisco Team",41
+"","A","OP",48
+"Subconsultant","A","San Francisco Team",52
+"Subconsultant","A","San Francisco Team",56
+"","A","SB",57
+"Intern","A","San Francisco Team",65
+"Subconsultant","A","San Francisco Team",68
+"Subconsultant","A","OP",80
+"Subconsultant","A","San Francisco Team",85
