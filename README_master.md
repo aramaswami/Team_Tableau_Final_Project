@@ -20,3 +20,10 @@ We developed a comprehensive machine learning model for our data. We submitted t
 
 ## Database
 Please see our individual repositories for a description of our database model. As noted above, we submitted the SQL code and ERD as well.
+
+## Files description:
+Project code folder: contains ML notebook and data
+ETL.ipynb: for ETL processing, clean data and create a connection string to import data to the SQL database server.
+SQL_Database_code folder: save the SQL code to join the tables using SQL query.
+Final_ERD.png: image of how relationship between tables.
+clean_input_ml.ipynb: for data preprocessing, return the cleaned_input.csv for the machine learning model.
