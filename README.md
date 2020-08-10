@@ -11,7 +11,7 @@ Submitted ML code, SQL code, presentation, and other materials as per the rubric
 * SQL code, ERD, merge table code, and related data are in SQL folders and main repository    
 * Presentation in pdf format is included in repository  
 [This is the GSlides link to the presentation](https://docs.google.com/presentation/d/1hAxS7EPKCvkDF0gaE0cOq2wyhXx_fzK4gBUPGlQOuKY/edit?usp=sharing)  
-* Other data and related files are in folders and repository  
+* Other data and related files are in folders and repository. Please see File_Descriptions in README_master.md for additional details.    
 
 ## Week_3
 Upcoming  
