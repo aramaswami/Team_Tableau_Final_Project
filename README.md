@@ -1,5 +1,5 @@
 # Team_Tableau_Final_Project  
-This repository contains our final project code, database, csv files, readme, and other information. Our Team_Tableau members are: Loc Nguyen and Ashok Ramaswami.  
+This repository contains our final project code, database, csv files, readme, and other information. Team_Tableau members are: Loc Nguyen and Ashok Ramaswami.  
 
 ## Week_1  
 Submitted project outline, communications, ML and database plan, and project goals. Please see README_master.md and other supplementary materials in the repository for addtional details.  
