@@ -2,7 +2,7 @@
 This repository contains our final project code, database, csv files, readme, and other information.  
 
 ## Week_1  
-Submitted project outline, communications, ML and database plan. and project goals. Please see README_master.md ad other supplementary materials in the repository for addtional details.  
+Submitted project outline, communications, ML and database plan. and project goals. Please see README_master.md and other supplementary materials in the repository for addtional details.  
 
 ## Week_2  
 Submitted ML code, SQL code, presentation, and other materials as per the rubric. Please review our supplemental readme files for additional information.  
