@@ -14,8 +14,10 @@ Submitted ML code, SQL code, presentation, and other materials as per the rubric
 
 ## Week_3
 Submitted Flask and html code for our dashboard. Please review the following folders and supplemental readme files for additional information.
-* webapp folder contains pickle model, flask code, and html
-
+* webapp folder contains pickle model, flask code, js, css, and other files
+* Dashboard folder contains screenshots
+* Also added the clean ML Lmodel that we used for visualization
+* Updated presentation slides
 
 ## Week_4  
 Upcoming
