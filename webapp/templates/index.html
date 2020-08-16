@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>Group_Project</title>
+   
+   <!-- this is a link to bootstrap -->
+   <link 
+      rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+      
+    />
+
+ </head>
+ <body>
+    
+    <!-- Class Container is required to use bootstrap --> 
+    <div class="container">
+      <!-- Use Bootstrap Jumbotron component for header -->
+      <div class="jumbotron text-center">
+        <h1>Team Tableau</h1>
+        <!-- Add a button to Scrape info, using Bootstrap component: button, primary color and large size. a/ is to link to other site, and link to the /scrape page -->
+        <!-- <p><a class="btn btn-primary btn-lg" href="/scrape"
+                  role="button">Scrape New Data</a></p> -->
+      </div>
+    </div>
+
+    
+    <!-- create a new div with a class of "row" and an id of "user-input" -->
+    <div class="row" id="user-input">
+      <!-- use all 12 col, spanning the whole page. sm/md/lg are for small/medium/large size resolution  -->
+      <div class="col-md-12">
+        <!-- display content as media, and styles from Bootstrap -->
+        <div class="media">
+          <div class="media-body">
+            <h2>Please enter the following data (all fields are required):</h2>            
+
+            <!-- create form -->
+            <form action="/" method="POST">
+
+              <div class="form-group">
+                <label>Your project name:</label>
+                <input type="text" placeholder="123 ABC avenue" value="123 ABC avenue" id="prj_name" name="prj_name" >
+              </div>
+
+              <div class="form-group">
+                <label>Service Line:</label>
+                <select id="input_service_line" name="service_line">
+                  <option value="Commissioning" selected>Commissioning</option>
+                  <option value="Energy Audit">Energy Audit</option>
+                  <option value="Energy Modeling">Energy Modeling</option>
+                  <option value="M&V">M&V</option>
+                  <option value="Compliance">Compliance</option>
+                  <option value="Strategic Planning">Strategic Planning</option>
+                  <option value="GPR">GPR</option>
+                  <option value="Materials">Materials</option>
+                  <option value="WELL">WELL</option>
+                  <option value="LBC">LBC</option>
+                  <option value="NZE">NZE</option>
+                  <option value="Education">Education</option>
+                  <option value="PM TI">PM TI</option>
+                  <option value="HPPM">HPPM</option>
+                  <option value="LCCA">LCCA</option>
+                  <option value="LEED">LEED</option>
+                  <option value="Incentives & Rebates">Incentives & Rebates</option>
+                  <option value="PM Ground Up">PM Ground Up</option>
+                  <option value="Brokerage">Brokerage</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Team:</label>
+                <select id="input_team" name="team">
+                  <option value="SB" selected>SB</option>
+                  <option value="EN">EN</option>
+                  <option value="PM">PM</option>
+                  <option value="OP">OP</option>                  
+                </select>
+              </div>
+
+              <!-- <div class="form-group">
+                <label>Project Manager:</label>
+                <select id="input_project_manager" name="project_manager">
+                  <option value="51" selected>Ashok</option>
+                  <option value="37">Burke</option>
+                  <option value="42">Charlie</option>
+                  <option value="84">Jake</option>
+                  <option value="89">Jolene</option>
+                  <option value="70">Katie</option>
+                  <option value="33">Loc</option>                  
+                </select>
+              </div> -->
+
+              <div class="form-group">
+                <label>Building Region:</label>
+                <select id="input_region" name="region">
+                  <option value="SF" selected>San Francisco</option>
+                  <option value="SD">San Diego</option>
+                  <option value="DV">Denver</option>                  
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>NDA:</label>
+                <select id="input_nda" name="nda">
+                  <option [ngValue]="true">True</option>
+                  <option [ngValue]="false" selected>False</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Budget:</label>
+                <input type="number" placeholder="$100,000" value="100000" id="input_budget" name="budget" min="0">
+              </div>
+
+              <div class="form-group">
+                <label>Estimated Hours:</label>
+                <input type="number" placeholder="100" value="100" id="input_hours" name="hours" step="0.1" min="0">
+              </div>
+
+              <div class="form-group">
+                <label>Estimated number of team members:</label>
+                <input type="number" placeholder="2" value="2" id="input_emp_count" name="emp_count" step="1" min="0">
+              </div>
+      
+              <div class="form-group">
+                <label>Estimated month duration:</label>
+                <input type="number" placeholder="2.5" value=2.5 id="input_duration" name="duration" step="0.1" min="0">
+              </div>
+
+              <button type="submit" class="btn btn-primary">Run</button>
+      
+            </form>
+
+            <h2>Model prediction result:</h2>
+            <h4 class="media-heading">{{result}}</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    
+
+
+ </body>
+</html>
