@@ -6,7 +6,6 @@ Submitted project outline, team communications plan, ML and database plan with i
 
 ## Week_2  
 Submitted ML code, SQL code, presentation, and other materials as per the rubric. Please review our supplemental readme files for additional information.  
-
 * ML code and data files are in folder Project_code  
 * SQL code, ERD, merge table code, and related data are in SQL folders and main repository    
 * Presentation in pdf format is included in repository  
@@ -14,7 +13,9 @@ Submitted ML code, SQL code, presentation, and other materials as per the rubric
 * Other data and related files are in folders and repository. Please see File_Descriptions in README_master.md for additional details.    
 
 ## Week_3
-Upcoming  
+Submitted Flask and html code for our dashboard. Please review the following folders and supplemental readme files for additional information.
+* webapp folder contains pickle model, flask code, and html
+
 
 ## Week_4  
 Upcoming
