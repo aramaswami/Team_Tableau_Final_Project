@@ -1,4 +1,4 @@
-# Team_Tableau_Final_Project
+# Team_Tableau_Final_Project Dashboard
 A brief recap of our work to date on the final project:
 - We used several python libraries including: pandas, numpy, sqlalchemy to process the raw data ETL, and load it to our local SQL Database.
 - We had 4 raw tables, but were able to join them into 2 tables using SQL query, and use them for the machine learning model.
