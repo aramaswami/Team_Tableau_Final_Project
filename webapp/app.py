@@ -16,7 +16,7 @@ scaler = StandardScaler()
 # Build functions:
 def standard_scaling(clean_df):
     # dropna
-    dropna_df = clean_df.dropna()
+    dropna_df = clean_df.dropna().reset_index(drop=True)
     # one-hot-encode
     test_list = ["project_manager","service_line", "team", "building_region","nda"]
         # Create a OneHotEncoder instance
@@ -47,7 +47,7 @@ def process_input(user_input):
     # append input row:
     copy_df.loc[len(copy_df)] = user_input
     # dropna
-    dropna_df = copy_df.dropna()
+    dropna_df = copy_df.dropna().reset_index(drop=True)
     # one-hot-encode
     test_list = ["project_manager","service_line", "team", "building_region","nda"]
         # Create a OneHotEncoder instance
@@ -63,7 +63,7 @@ def process_input(user_input):
     
     # Get the last row for prediction
     last_row = merge_df.tail(1).values
-        
+    
     # append last row to X_test array:
     new_X_test = np.append( X_test , last_row , axis=0)
         
@@ -108,7 +108,7 @@ def index():
         prj_name = req["prj_name"]
         service_line = req["service_line"]
         team = req["team"]
-        # project_manager = int(req["project_manager"])
+        project_manager = int(req["project_manager"])
         budget_input = float(req["budget"])
         region = req["region"]
         nda = bool(req["nda"])
@@ -116,7 +116,7 @@ def index():
         emp_count = int(req["emp_count"])
         duration = float(req["duration"])
         # append to array:
-        user_input = ['user input', service_line, team, 51, 0, budget_input, region, nda, hours, emp_count, duration]
+        user_input = ['user input', service_line, team, project_manager, 0, budget_input, region, nda, hours, emp_count, duration]
         print(user_input)
 
         # prediction:
@@ -124,7 +124,7 @@ def index():
 
         # result message:
         if prediction == 0:
-            result_mess = f'Your project {prj_name} has {score:.2f}% chance to be Over-budget.'
+            result_mess = f'Your project {prj_name}  has {score:.2f}% chance to be Over-budget.'
         else:
             result_mess = f'Congratulations! Your project {prj_name} has {score:.2f}% chance to be Under-budget.'
 
