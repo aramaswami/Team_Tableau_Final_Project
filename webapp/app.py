@@ -123,7 +123,7 @@ def index():
         prediction = process_input(user_input)
 
         # result message:
-        if prediction == 0:
+        if prediction == 1:
             result_mess = f'Your project {prj_name}  has {score:.2f}% chance to be Over-budget.'
         else:
             result_mess = f'Congratulations! Your project {prj_name} has {score:.2f}% chance to be Under-budget.'
