@@ -83,13 +83,13 @@
               <div class="form-group">
                 <label>Project Manager:</label>
                 <select id="input_project_manager" name="project_manager">
-                  <option value="51" selected>Ashok</option>
-                  <option value="37">Burke</option>
-                  <option value="42">Charlie</option>
-                  <option value="84">Jake</option>
-                  <option value="89">Jolene</option>
-                  <option value="70">Katie</option>
-                  <option value="33">Loc</option>                  
+                  <option value="{'val':51,'name':'Ashok'}" selected>Ashok</option>
+                  <option value="{'val':37,'name':'Burke'}">Burke</option>
+                  <option value="{'val':42,'name':'Charlie'}">Charlie</option>
+                  <option value="{'val':84,'name':'Jake'}">Jake</option>
+                  <option value="{'val':89,'name':'Jolene'}">Jolene</option>
+                  <option value="{'val':70,'name':'Katie'}">Katie</option>
+                  <option value="{'val':33,'name':'Loc'}">Loc</option>                  
                 </select>
               </div>
 
@@ -135,7 +135,9 @@
             </form>
 
             <h2>Model prediction result:</h2>
-            <h4 class="media-heading">{{result}}</h4>
+            <h4 class="media-heading">
+              <p>{{result}}</p>
+            </h4>
 
           </div>
         </div>

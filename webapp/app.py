@@ -3,9 +3,10 @@
 	# 	set FLASK_ENV=development
 # Then: flask run
 
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, Markup
 import numpy as np
 import pandas as pd
+import yaml
 import pickle
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.model_selection import train_test_split
@@ -102,13 +103,17 @@ app = Flask(__name__)
 @app.route('/', methods=["GET", "POST"]) # methods GET and POST to store user input
 def index(): 
     if request.method == "POST":        
+        
         user_input = []
         # collect data:
         req = request.form
+            # project manager is a str, so need to convert to dict type first
+        pm_dict = yaml.load(req["project_manager"])
+
         prj_name = req["prj_name"]
         service_line = req["service_line"]
         team = req["team"]
-        project_manager = int(req["project_manager"])
+        project_manager = int(pm_dict.get('val'))
         budget_input = float(req["budget"])
         region = req["region"]
         nda = bool(req["nda"])
@@ -118,15 +123,31 @@ def index():
         # append to array:
         user_input = ['user input', service_line, team, project_manager, 0, budget_input, region, nda, hours, emp_count, duration]
         print(user_input)
+        
 
         # prediction:
         prediction = process_input(user_input)
 
+        # return results:
+        prj_summary = Markup( f"<p style='color:red'><b>Project Summary:</b><br></p>"
+                        f"Name: {prj_name}<br>"
+                        f"Service Line: {service_line}<br>"
+                        f"Team: {team}<br>"
+                        f"Region: {region}<br>"
+                        f"Project Manager: {pm_dict.get('name')}<br>"
+                        f"Budget: ${budget_input:,.0f}<br>"
+                        f"NDA: {nda}<br>"                        
+                        f"Estimated hours: {hours:.0f}<br>"
+                        f"Estimated team members: {emp_count:.0f}<br>"
+                        f"Estimated Duration: {duration:.1f} months<br>"
+                        f"<b>-----------------------------------------------------------------</b><br>"
+                        )
+        
         # result message:
         if prediction == 1:
-            result_mess = f'Your project {prj_name}  has {score:.2f}% chance to be Over-budget.'
+            result_mess = prj_summary + Markup(f"Your project {prj_name}  has {score:.2f}% chance to be <span style='color:red'><b>Over-budget</b></span>.")
         else:
-            result_mess = f'Congratulations! Your project {prj_name} has {score:.2f}% chance to be Under-budget.'
+            result_mess = prj_summary + Markup(f"Congratulations! Your project {prj_name} has {score:.2f}% chance to be <span style='color:red'><b>Under-budget</b></span>.")
 
         return render_template("index.html", result = result_mess)
     return render_template("index.html", result = message) # return an HTML template using an index.html file
